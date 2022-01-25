@@ -1157,10 +1157,10 @@ Get Second CIC Rec
 
  Parse Number Update Response
    [Arguments]       ${dictionary_name}
-   Dictionary should contain key                             ${dictionary_name}         updateResult
-   ${updateResult}=              Get from Dictionary         ${dictionary_name}         updateResult
-   ${recVersionId}=              Get from Dictionary         ${updateResult[0]}         recVersionId
-   ${num}=                       Get from Dictionary         ${updateResult[0]}         num
+  Dictionary should contain key                             ${dictionary_name}         recVersionId
+   #${updateResult}=              Get from Dictionary         ${dictionary_name}         updateResult
+   ${recVersionId}=              Get from Dictionary         ${dictionary_name}         recVersionId
+   ${num}=                       Get from Dictionary         ${dictionary_name}         num
 
  Future Effective Date
    [Arguments]     ${Date}     ${Number of Days}

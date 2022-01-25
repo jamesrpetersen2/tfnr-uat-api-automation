@@ -1,5 +1,12 @@
 # tfnr-uat-api-automation
- pip list
+
+Clone this repository into your local directory on your PC. The Python environment and robot version are
+listed below and should be updated to match. When ready to run the scripts, use robot [script name].robot
+where [script name] is replaced by the name of a script found in this directory.
+Make changes to ROID, Accept-Version, host and ID info in ./data_files/api/UAT_testdata.robot.
+
+pip list  -  display packages for Python
+
 Package                        Version
 ------------------------------ ---------
 async-generator                1.10
@@ -30,7 +37,5 @@ urllib3                        1.26.7
 wsproto                        1.0.0
 
 robot --version
-Robot Framework 4.1.3 (Python 3.10.1 on darwin)
 
-clone this dipository to your local directory. Run scripts by executing
-robot [scriptname].robot
+Robot Framework 4.1.3 (Python 3.10.1 on darwin)
